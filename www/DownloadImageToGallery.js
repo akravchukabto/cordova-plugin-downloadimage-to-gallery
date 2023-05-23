@@ -18,6 +18,6 @@ function download(url, successFn, failureFn) {
 }
 
 function downloadWithLocalPath(src, onsuccess, onerror) {
-    cordova.exec(onsuccess, onerror, "ImgDownloader", "download", [src]);
+    cordova.exec(onsuccess, onerror, "DownloadImageToGallery", "download", [src]);
 };
 
